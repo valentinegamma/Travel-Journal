@@ -1,3 +1,5 @@
+/* HEADER */
+
 .rectangle {
   column-gap: 2rem;
   display: flex;
@@ -13,5 +15,57 @@
 .rectangle > span {
   color: white;
   font-size: 1.4rem;
+  font-weight: 500;
+}
 
+/* ENTRY */
+
+section {
+  margin: 3rem auto;
+  width: fit-content;
+  max-width: 1000px;
+}
+
+.entry-article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  width: 47rem;
+  height: 16.8rem;
+}
+p span {
+  color: #918E9B;
+  text-decoration: underline;
+}
+
+.entry-img {
+  border-radius: 20px;
+  width: 12.5rem;
+  height: 16.8rem;
+  grid-column: span 1;
+}
+.entry-data {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  grid-column: span 2;
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+}
+
+.fill-flex {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.entry-date {
+  font-weight: 700;
+}
+
+.entry-data > h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
 }
