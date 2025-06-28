@@ -1,12 +1,12 @@
 import './App.css'
 import Header from './Components/Header'
-import Entry from './Components/Entry'
+import EntryData from './Components/Entrydata'
 
 function App() {
   return (
     <>
       <Header />
-      <Entry />
+      <EntryData />
     </>
   )
 }
