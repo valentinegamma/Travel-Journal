@@ -7,12 +7,8 @@ function App() {
    const EntryElement = Data.map((data) => {
     return(
       <Entry 
-        mainImage= {data.mainImage} 
-        alt = {data.alt}
-        country = {data.country}
-        location = {data.location}
-        date = {data.date}
-        description = {data.description}
+        key = {data.id}
+        {...data}
       />
     )
    })
